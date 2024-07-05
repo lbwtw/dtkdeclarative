@@ -7,6 +7,7 @@
 #include <dtkcore_global.h>
 
 #include <QtCore/QMetaMethod>
+#include <QtCore/QLoggingCategory>
 
 #define DQUICK_NAMESPACE Quick
 #define DTK_QUICK_NAMESPACE DTK_NAMESPACE::Quick
@@ -14,3 +15,5 @@
 #define DQUICK_BEGIN_NAMESPACE namespace DTK_NAMESPACE { namespace DQUICK_NAMESPACE {
 #define DQUICK_END_NAMESPACE }}
 #define DQUICK_USE_NAMESPACE using namespace DTK_QUICK_NAMESPACE;
+
+Q_DECLARE_LOGGING_CATEGORY(DECLARATIVE_DTK)
